@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+
+/*Header CSS */
+#header-container {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+#title-image {
+    max-height: 40px;
+    align-self: center;
+}
+
+.header-content {
+}
+
+#linklist {
+    list-style-type: none;
+
+}
+
+li.nav-link {
+    display: flex;
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    
+    
+}
+/*End Header CSS */
+
+/*Main Content CSS */
+#main-container {
+    display: grid;
+}
