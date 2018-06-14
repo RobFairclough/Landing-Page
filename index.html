@@ -1,35 +1,88 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "stylesheet" href = "styles.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> <!--Font-->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script> <!--jquery-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> <!--Fontawesome-->
     <script src = "main.js"></script>
-    <!--favicon below could be changed but not too important-->
     <link rel = "icon"
           type = "image/png"
           href = "https://imgur.com/dJq9h9q.png">
     
-    <title>Landing Page</title> <!--placeholder, change according to product-->
+    <title>Rob Fairclough Designs</title> 
 </head>
 
 <body>
     <header id = "header">
         <div id = "header-container">
-            <img class = "header-content" id = "title-image" src = "https://i.imgur.com/NV1FNev.png" alt = "logo">
-            <h1 class = "header-content" id = "main-title">Landing Page</h1>
+            <img class = "header-content" id = "header-img" src = "https://imgur.com/E83JPNc.png" alt = "logo">
+            <h1 class = "header-content title-font" id = "main-title">Rob's Web</h1>
             <nav id = "nav-bar">
-            <ul id = "linklist">
-                <li class = "nav-link"><a>hello1</a></li>
-                <li class = "nav-link"><a>hello1</a></li>
-                <li class = "nav-link"><a>hello1</a></li>
-                <li class = "nav-link"><a>hello1</a></li>            
-            </ul>
+                <ul id = "linklist">
+                    <li class = "navlist"><a class = "nav-link" href = "https://www.robfairclough.github.io" target = "_blank">Portfolio</a></li>
+                    <li class = "navlist"><a href = "#video-container" class = "nav-link" id = "video-link">Video</a></li>
+                    <li class = "navlist"><a href = "#main-content" class = "nav-link" id = "article-link">Article</a></li>
+                    <li class = "navlist"><a href = "#main-container" class = "nav-link" id = "home-link">Home</a></li>
+                </ul>
             </nav>
         </div>
     </header>
-    
-    <main>
-        <div id = "main-container">
+    <div class = "outer-container">
+    <main class = "top-margin">
+        <div id = "main-container" class = "top-buffer">
+            <div id = "profilediv">
+                <h2 class = "title-font text-center" id = "profile-title">Welcome</h2>
+                <p class = "regular-font">I'm Rob, an independent web developer based in Bury, Manchester. If you need a personal website or a site for your business, you've come to the right place. </p>
+            </div>
+            <div id = "emaildiv">
+                <form action = "https://www.freecodecamp.com/email-submit" id = "form" class = "vertical-buffer title-font">
+                    Enquiries? Get in touch:
+                    <br>
+                    <label for = "username" class = "form-label">Your name:</label>
+                    <input type = "text" name = "username" placeholder = "Henry Thomas Michael Lansbury" id = "user-name" class = "form-input">
+                    <br>
+                    <label for = "email" class = "form-label">Your e-mail address:</label>
+                    <input type = "email" name = "email" placeholder = "yourname@example.com" id = "email" class = "form-input">
+                    <br>
+                    <label for = "details" class = "form-label">Your enquiry:</label>
+                    <textarea type = "text" name = "details" placeholder = "I'd like to discuss my website with you!" id = "userdetails" class = "form-input"></textarea>
+                    <br>
+                    <input type = "submit" value = "Submit" class = "margin-auto" id = "submit">
+                </form>
+            </div>
+            <article id = "main-content" class = "top-buffer">
+                <ul class = "main-list margin-auto">
+                    <li class = "main-list-content">
+                        <img class = "main-img main-list-item" src = "https://imgur.com/E83JPNc.png" alt = "1"><p class = "main-list-item"><b>Responsive</b>: All designs will be made responsive, optimised for all devices from smartphones to tablets to desktop computers. Ready to be viewed by anyone, anywhere.</p>
+                    </li>
+                    <li class = "main-list-content">
+                        <img class = "main-img main-list-item" src = "https://imgur.com/E83JPNc.png" alt = "2"><p class = "main-list-item"><b>Accessible</b>: Designs are made to follow accessibility standards, opening them up to people requiring screen readers, those unable to use a mouse and more.</p>
+                    </li>
+                    <li class = "main-list-content">
+                        <img class = "main-img main-list-item" src = "https://imgur.com/E83JPNc.png" alt = "3"><p class = "main-list-item"><b>Bespoke</b>: Get in touch to arrange a discussion of your wants and needs for your site, and every effort will be made to ensure you have the website that's perfect for you or your business.</p>
+                    </li>
+                </ul>
+            </article>
+            <div id = "video-container" class = "top-buffer">
+                <h2 class = "title-font"> Video </h2>
+                <div class = "video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TO8g1klPqaI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class = "top-buffer grid-video"></iframe>
+                </div>
+                <br>
+            </div>
             
         </div>
     </main>
+    
+    <footer class = "footer">
+        <p class = "footer-text ">&copy; Rob Fairclough 2018, <a id = "github-link" href = "https://www.robfairclough.github.io" target = "_blank"> Portfolio</a>, <a href = "mailto:rob.a.fairclough@gmail.com">Contact me directly</a>.</p>
+    </footer>
+    </div>
 </body>
