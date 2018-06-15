@@ -121,6 +121,14 @@ a.nav-link:hover {
     background-color: antiquewhite;
 }
 
+.profile-photo {
+    width: 40%;
+    height: auto;
+    margin: auto;
+    display: block;
+    border-radius: 10em;
+}
+
 #profile-title {
     font-size: 2rem;
 }
