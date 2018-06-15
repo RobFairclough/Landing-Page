@@ -1,10 +1,14 @@
+html {
+    width: 100%;
+}
+
 body {
-    background-color: #55473a;
+    background: radial-gradient(gold 1%, #55473a 99%);
     font-family: "Roboto", serif;
     height: 100%;
     margin: 0;
     padding: 0;
-    max-width: 100%;
+    width: 100%;
 }
 
 /*Header CSS */
@@ -16,6 +20,8 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 2;
     
 }
@@ -106,7 +112,6 @@ a.nav-link:hover {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
-    max-width: 100%;
     width: 100%;
 }
 
@@ -120,6 +125,11 @@ a.nav-link:hover {
     font-size: 2rem;
 }
 
+.profile-text {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1em;
+}
 .main-img {
     height: 3em;
     margin-bottom: -10px;
@@ -158,7 +168,7 @@ a.nav-link:hover {
 
 iframe {
     max-width: 100%;
-    width: auto;
+    width: auto ;
     height: auto;
 }
 
@@ -210,6 +220,7 @@ iframe {
     min-height: 100%;
     padding-bottom: 100px;
     z-index: 1;
+
 }
 
 .title-font {
