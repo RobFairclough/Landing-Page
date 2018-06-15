@@ -210,7 +210,7 @@ iframe {
     margin-top: 10px;
 }
 .top-margin {
-    margin-top: 100px;
+    margin-top: 8em;
 }
 .vertical-buffer {
     padding-top: 15px;
@@ -264,6 +264,9 @@ iframe {
     }
     #profilediv {
         grid-column: 2 / 3;
+    }
+    .top-margin {
+        margin-top: 6em;
     }
     }
 
